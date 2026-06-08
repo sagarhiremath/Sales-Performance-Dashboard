@@ -230,4 +230,5 @@ Orders (fact table)
 
 KPI Metrics (hidden table holding all DAX measures)
 ```
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2a324dcc-c867-4e92-98f8-e3df9d4d2061" />
+<img width="1920" height="968" alt="Screenshot (236)" src="https://github.com/user-attachments/assets/b9bfa698-caa8-4fb8-ba83-17ef1e8b3e55" />
+
