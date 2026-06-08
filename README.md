@@ -224,10 +224,10 @@ This will:
 ### Data model (simple view)
 
 ```
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2a324dcc-c867-4e92-98f8-e3df9d4d2061" />
 
 Orders (fact table)
     └── linked to Targets via Target Key (Region + Category + Year)
 
 KPI Metrics (hidden table holding all DAX measures)
 ```
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/2a324dcc-c867-4e92-98f8-e3df9d4d2061" />
