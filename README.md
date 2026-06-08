@@ -14,8 +14,6 @@ This dashboard is designed for:
 - **Regional Managers** who need to see how their region and product categories are doing  
 - **Leadership** who want quick answers, not complicated reports  
 
-You do **not** need to know Power BI, SQL, or coding to **use** the dashboard. Just open the file and use the filters (slicers) on each page.
-
 ---
 
 ## What problem does this solve?
@@ -52,8 +50,6 @@ This dashboard answers questions like:
 | **Target.csv** | Company sales targets by product category and year |
 | **processed/** | Cleaned data files used inside the dashboard |
 | **build_dashboard.py** | Script that cleans data and builds the dashboard (for technical users) |
-| **PowerQuery_Transformations.pq** | Reference for data cleaning steps (optional) |
-| **Data Analyst Assignment_05.pdf** | Original assignment brief |
 
 ---
 
@@ -209,19 +205,6 @@ Examples: Total Sales, YoY %, Target Achievement %, Return Rate %, Delay Rate %,
 - If numbers look odd, check that **Year** is selected on the slicer.  
 - **Green / good** and **red / bad** in YoY cards depend on context — growth in sales is usually good; growth in returns or delays is usually bad.
 
----
-
-## Suggested presentation flow (for your video recording)
-
-1. **Intro (30 sec)** — “We built this so the Sales Manager can see business health in one place.”  
-2. **Page 1 (2 min)** — Overall sales, profit, growth vs last year, regions and categories.  
-3. **Page 2 (2 min)** — Pick one manager who is strong in one category but weak in another; show the table.  
-4. **Page 3 (2 min)** — Returns and delays; point to 1–2 action areas from the risk table.  
-5. **Close (30 sec)** — Summarize: growing or not, who needs support, top operational risks.
-
-Keep language **simple** — avoid “DAX”, “ETL”, “star schema” unless the audience is technical.
-
----
 
 ## For technical users (optional)
 
@@ -246,68 +229,3 @@ Orders (fact table)
 
 KPI Metrics (hidden table holding all DAX measures)
 ```
-
----
-
-## Data coverage
-
-| Item | Detail |
-|------|--------|
-| **Years** | 2015, 2016, 2017 |
-| **Regions** | North, Central, South |
-| **Categories** | Furniture, Office Supplies, Technology |
-| **Regional Managers** | Ross DeVincentis (North), Emily Burns (Central), Damala Kotsonis (South) |
-| **Order lines** | 6,472 |
-
----
-
-## Assignment checklist
-
-| Requirement | Covered |
-|-------------|---------|
-| Overall business performance | Yes — Page 1 |
-| Region-wise performance | Yes — Page 1 |
-| Regional Manager performance | Yes — Pages 1 & 2 |
-| Category-wise target achievement | Yes — Pages 1 & 2 |
-| Manager + category target mapping | Yes — Page 2 matrix |
-| Year-over-Year comparison | Yes — YoY % on all pages |
-| Sales vs target | Yes — Page 2 |
-| Profit performance | Yes — Page 1 |
-| Product returns | Yes — Page 3 |
-| Delivery delays | Yes — Page 3 |
-| Key risks and action areas | Yes — Page 3 action table |
-
----
-
-## License & usage
-
-This project was created as an **academic / assignment submission**.  
-Data is sample business data provided for the assignment.  
-Feel free to use the structure and documentation for learning purposes.
-
----
-
-## Contact & submission
-
-- **Assignment form:** [Google Form Submission](https://forms.gle/Me8Qt13DAGUgi4Je7)  
-- **Deliverables:** Public link to `.pbix` file + short screen recording walkthrough  
-
----
-
-## Quick FAQ
-
-**Q: Do I need internet to use the dashboard?**  
-A: No. Once opened in Power BI Desktop, it works offline.
-
-**Q: Why do I need to select a Year?**  
-A: Targets and YoY comparisons are calculated per year. Without a year, some numbers use 2017 as default.
-
-**Q: Can I edit the dashboard?**  
-A: Yes, in Power BI Desktop you can change colors, add charts, or refresh data from the `processed` folder.
-
-**Q: Is the Sales Target the same for every manager in the table?**  
-A: No. Targets differ by **region, category, and year** because each region gets a share of the company target based on its sales contribution.
-
----
-
-*Built to help the Sales Manager run confident monthly reviews — clear numbers, simple language, and a path from overview to action.*
